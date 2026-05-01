@@ -198,28 +198,22 @@ export function PricingSection() {
                   </button>
                 )}
                 {plan.name === 'Pro' && (
-                  <a
-                    href="mailto:inaciofelipe40@gmail.com?subject=Upgrade%20Sentinel%20API%20Pro%20-%20$49/mes"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full"
-                  >
-                    <button className="w-full bg-white text-black font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition">
-                      {plan.cta}
+                  <form action="https://formsubmit.co/inaciofelipe40@gmail.com" method="POST" className="block w-full">
+                    <input type="hidden" name="_subject" value="Upgrade Sentinel API Pro - $49/mes" />
+                    <input type="hidden" name="_next" value="https://sentinel-landing-production.up.railway.app" />
+                    <button type="submit" className="w-full bg-white text-black font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition">
+                      Choose Pro
                     </button>
-                  </a>
+                  </form>
                 )}
                 {plan.name === 'Enterprise' && (
-                  <a
-                    href="mailto:inaciofelipe40@gmail.com?subject=Upgrade%20Sentinel%20API%20Enterprise%20-%20$199/mes"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full"
-                  >
-                    <button className="w-full bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-700 transition">
-                      {plan.cta}
+                  <form action="https://formsubmit.co/inaciofelipe40@gmail.com" method="POST" className="block w-full">
+                    <input type="hidden" name="_subject" value="Upgrade Sentinel API Enterprise - $199/mes" />
+                    <input type="hidden" name="_next" value="https://sentinel-landing-production.up.railway.app" />
+                    <button type="submit" className="w-full bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-700 transition">
+                      Contact Sales
                     </button>
-                  </a>
+                  </form>
                 )}
               </motion.div>
             ))}
