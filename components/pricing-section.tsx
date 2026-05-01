@@ -202,13 +202,16 @@ export function PricingSection() {
                     href="https://buy.stripe.com/5kQ00c332bvM3Br8mm67S00"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`mt-8 block w-full rounded-xl px-4 py-3 text-center text-sm font-semibold transition-all ${
-                      plan.highlighted
-                        ? 'bg-gradient-to-r from-sentinel-purple to-sentinel-cyan text-white hover:opacity-90'
-                        : 'border border-white/10 text-white hover:bg-white/5'
-                    }`}
                   >
-                    {plan.cta}
+                    <button
+                      className={`mt-8 block w-full rounded-xl px-4 py-3 text-center text-sm font-semibold transition-all ${
+                        plan.highlighted
+                          ? 'bg-gradient-to-r from-sentinel-purple to-sentinel-cyan text-white hover:opacity-90'
+                          : 'border border-white/10 text-white hover:bg-white/5'
+                      }`}
+                    >
+                      {plan.cta}
+                    </button>
                   </a>
                 )}
                 {plan.name === 'Enterprise' && (
@@ -216,13 +219,16 @@ export function PricingSection() {
                     href="https://buy.stripe.com/4gMfZadHGbvMfk9cCD67S01"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`mt-8 block w-full rounded-xl px-4 py-3 text-center text-sm font-semibold transition-all ${
-                      plan.highlighted
-                        ? 'bg-gradient-to-r from-sentinel-purple to-sentinel-cyan text-white hover:opacity-90'
-                        : 'border border-white/10 text-white hover:bg-white/5'
-                    }`}
                   >
-                    {plan.cta}
+                    <button
+                      className={`mt-8 block w-full rounded-xl px-4 py-3 text-center text-sm font-semibold transition-all ${
+                        plan.highlighted
+                          ? 'bg-gradient-to-r from-sentinel-purple to-sentinel-cyan text-white hover:opacity-90'
+                          : 'border border-white/10 text-white hover:bg-white/5'
+                      }`}
+                    >
+                      {plan.cta}
+                    </button>
                   </a>
                 )}
               </motion.div>
