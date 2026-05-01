@@ -204,13 +204,7 @@ export function PricingSection() {
                     rel="noopener noreferrer"
                     className="block w-full"
                   >
-                    <button
-                      className={`mt-8 block w-full rounded-xl px-4 py-3 text-center text-sm font-semibold transition-all ${
-                        plan.highlighted
-                          ? 'bg-gradient-to-r from-sentinel-purple to-sentinel-cyan text-white hover:opacity-90'
-                          : 'border border-white/10 text-white hover:bg-white/5'
-                      }`}
-                    >
+                    <button className="w-full bg-white text-black font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition">
                       {plan.cta}
                     </button>
                   </a>
@@ -222,13 +216,7 @@ export function PricingSection() {
                     rel="noopener noreferrer"
                     className="block w-full"
                   >
-                    <button
-                      className={`mt-8 block w-full rounded-xl px-4 py-3 text-center text-sm font-semibold transition-all ${
-                        plan.highlighted
-                          ? 'bg-gradient-to-r from-sentinel-purple to-sentinel-cyan text-white hover:opacity-90'
-                          : 'border border-white/10 text-white hover:bg-white/5'
-                      }`}
-                    >
+                    <button className="w-full bg-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-purple-700 transition">
                       {plan.cta}
                     </button>
                   </a>
