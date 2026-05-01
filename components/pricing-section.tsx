@@ -199,7 +199,7 @@ export function PricingSection() {
                 )}
                 {plan.name === 'Pro' && (
                   <a
-                    href="https://buy.stripe.com/5kQ00c332bvM3Br8mm67S00"
+                    href="mailto:inaciofelipe40@gmail.com?subject=Upgrade%20Sentinel%20API%20Pro%20-%20$49/mes"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full"
@@ -217,7 +217,7 @@ export function PricingSection() {
                 )}
                 {plan.name === 'Enterprise' && (
                   <a
-                    href="https://buy.stripe.com/4gMfZadHGbvMfk9cCD67S01"
+                    href="mailto:inaciofelipe40@gmail.com?subject=Upgrade%20Sentinel%20API%20Enterprise%20-%20$199/mes"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block w-full"
