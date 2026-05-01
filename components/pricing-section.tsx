@@ -202,6 +202,7 @@ export function PricingSection() {
                     href="https://buy.stripe.com/5kQ00c332bvM3Br8mm67S00"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="block w-full"
                   >
                     <button
                       className={`mt-8 block w-full rounded-xl px-4 py-3 text-center text-sm font-semibold transition-all ${
@@ -219,6 +220,7 @@ export function PricingSection() {
                     href="https://buy.stripe.com/4gMfZadHGbvMfk9cCD67S01"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="block w-full"
                   >
                     <button
                       className={`mt-8 block w-full rounded-xl px-4 py-3 text-center text-sm font-semibold transition-all ${
