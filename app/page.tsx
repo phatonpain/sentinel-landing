@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import LiveDemo from "./components/live-demo";
 
 /* ─── HERO: Neural Particle Canvas ─── */
 function NeuralCanvas() {
@@ -270,7 +271,8 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] mb-6"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] mb-6 glitch"
+            data-text="Neural Defense Grid"
           >
             Neural Defense{" "}
             <span className="bg-gradient-to-r from-cyan-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
@@ -315,37 +317,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Terminal Code Block */}
-      <section id="demo" className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="rounded-2xl overflow-hidden border border-white/10 bg-[#0a0a0f] shadow-2xl"
-          >
-            <div className="flex items-center gap-2 px-4 py-3 bg-[#12121a] border-b border-white/5">
-              <div className="w-3 h-3 rounded-full bg-red-500/80" />
-              <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
-              <div className="w-3 h-3 rounded-full bg-green-500/80" />
-              <span className="ml-4 text-xs text-zinc-500 font-mono">sentinel-api — bash — 80x24</span>
-            </div>
-            <div className="p-6 font-mono text-sm leading-relaxed overflow-x-auto">
-              <div className="text-zinc-500">$ curl -X POST https://api.sentinel-ai.one/v1/inspect \</div>
-              <div className="text-zinc-500">  -H "<span className="text-cyan-400">X-Sentinel-Api-Key</span>: sk_live_..." \</div>
-              <div className="text-zinc-500">{`  -d '{"url":"https://target-api.com","method":"POST","headers":{},"body":"{\"input\":\"test\"}"}'`}</div>
-              <div className="mt-4 text-zinc-500">{`{`}</div>
-              <div className="text-zinc-300 ml-4">"verdict": <span className="text-green-400">"ALLOW"</span>,</div>
-              <div className="text-zinc-300 ml-4">"riskScore": <span className="text-amber-400">12</span>,</div>
-              <div className="text-zinc-300 ml-4">"threatsDetected": [],</div>
-              <div className="text-zinc-300 ml-4">"latencyMs": <span className="text-cyan-400">21</span>,</div>
-              <div className="text-zinc-300 ml-4">"recommendations": [<span className="text-green-400">"Add CSP header"</span>]</div>
-              <div className="text-zinc-500">{`}`}</div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
+      <LiveDemo />
       {/* Features Grid */}
       <section id="features" className="py-24 px-6">
         <div className="max-w-7xl mx-auto">
